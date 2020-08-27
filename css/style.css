@@ -15,7 +15,7 @@ body {
 body {
     background-color: #f2aa4cff;
     padding: 1rem 0;
-    color: #101820ff;
+    color: rgba(36, 64, 100, .8);
 }
 
 .wrapper {
@@ -30,24 +30,56 @@ body {
 }
 
 h1 {
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
     margin: 0;
+    margin-left: 2rem;
+    font-weight: 800;
+    font-size: 3rem;
+    background: -webkit-linear-gradient( rgb(39, 39, 212), rgb(102, 102, 16));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    ;
 }
 
 .wrapper .screen {
     width: 20vh;
     height: 20vh;
     background: rgba(18, 24, 32, .5);
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     border-radius: 10px;
+    border: 3px solid rgba(242, 170, 76, .5);
 }
 
-.keyboard {
+.wrapper .keyboard {
     display: grid;
-    grid-template-columns: repeat(ma);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 6px;
     width: 80%;
     height: 40vh;
     border-radius: 10px;
-    background-color: rgb(3, 33, 73, .8);
+    background-color: rgba(3, 33, 73, .8);
+    padding: .4rem;
+}
+
+.keyboard span {
+    background: rgba(3, 33, 73, .5);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 2.3rem;
+    cursor: pointer;
+    border: 1px solid #F2AA4C;
+    box-shadow: 0 0 5px rgba(242, 170, 76, .8);
+}
+
+.keyboard span:hover {
+    box-shadow: none;
+    transform: scale(0.98);
+    transition: transform ease-in 1s;
 }
