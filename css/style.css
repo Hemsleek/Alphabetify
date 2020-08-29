@@ -90,8 +90,8 @@ h1 {
     box-shadow: 0 0 5px rgba(242, 170, 76, .8);
 }
 
-.keyboard span:hover {
-    box-shadow: none;
-    transform: scale(0.98);
+.keyboard span.active {
+    border: 5px solid yellow;
+    transform: scale(1.05);
     transition: transform ease-in 1s;
 }

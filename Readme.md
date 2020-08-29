@@ -16,7 +16,7 @@ Browser version must be recent for better experience.
 ## Feature
 
 - pronounce each letter on click or keyboard press
-
+- Display alphabet pressed/clicked
 
 
 ## Tech/Framework Used
