@@ -3,7 +3,7 @@ Alphabetify is an implementation of the English aplhabet and each letter pronoun
 
 ## Preview
 
-Demo
+![Screenshot](alphabetify.png)
 
 ## Getting started
 
