@@ -1,6 +1,6 @@
  /* selectors */
- const alphabetEls = document.querySelectorAll("span");
-
+ const alphabetEls = document.querySelectorAll(".keyboard > span");
+ const screenEl = document.querySelector(".screen > span");
  /*utility functions*/
 
  const playSound = (e) => {
@@ -12,9 +12,12 @@
 
      const audioEl = document.querySelector(`audio[data-key='${key}']`)
 
+
+
      if (!audioEl) return
 
-     const alphabet = Array.from(document.querySelectorAll("span")).filter(a => a.innerText.toLowerCase() == `${key}`)[0];
+     const alphabet = Array.from(document.querySelectorAll(".keyboard > span")).filter(a => a.innerText.toLowerCase() == `${key}`)[0];
+        screenEl.innerText=key.toUpperCase();
 
      alphabet.classList.add("active")
 
@@ -45,3 +48,5 @@
  })
 
  window.addEventListener("keydown", playSound);
+
+
